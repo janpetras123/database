@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="533.0" maxWidth="800.0" minHeight="533.0" minWidth="800.0" prefHeight="533.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GUIController">
+   <center>
+      <TabPane maxHeight="533.0" maxWidth="800.0" minHeight="533.0" minWidth="800.0" prefHeight="533.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+            <Tab text="Overview">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableId" layoutX="5.0" layoutY="51.0" prefHeight="390.0" prefWidth="790.0">
+                          <columns>
+                            <TableColumn fx:id="NameOverviewId" prefWidth="125.0" text="Name" />
+                            <TableColumn fx:id="SurnameOverviewId" prefWidth="129.0" text="Surname" />
+                              <TableColumn fx:id="TeamOverviewId" prefWidth="259.0" text="Team" />
+                              <TableColumn fx:id="CountryOverviewId" prefWidth="217.0" text="Country" />
+                              <TableColumn fx:id="RacesOverviewId" minWidth="0.0" prefWidth="59.0" text="Races" />
+                          </columns>
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect>
+                        </TableView>
+                        <TextField fx:id="NameOverviewField" layoutX="167.0" layoutY="14.0" promptText="Name">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></TextField>
+                        <TextField fx:id="SurnameOverviewField" layoutX="374.0" layoutY="14.0" promptText="Surname">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></TextField>
+                        <Button fx:id="FindOverviewId" layoutX="640.0" layoutY="14.0" mnemonicParsing="false" text="Find">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Button>
+                        <Button fx:id="UpdateOverviewId" layoutX="14.0" layoutY="465.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Update">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Button>
+                        <Button fx:id="DeleteOverviewId" layoutX="686.0" layoutY="465.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Delete">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Button>
+                        <Button fx:id="Previous" layoutX="323.0" layoutY="453.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="&lt;Previous">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Button>
+                        <Button fx:id="Next" layoutX="413.0" layoutY="453.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Next&gt;">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Button>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Detail of racers">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="218.0" layoutY="223.0" text="Name:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label layoutX="218.0" layoutY="261.0" text="Surname:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label layoutX="218.0" layoutY="299.0" text="Birthday:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label layoutX="218.0" layoutY="338.0" text="Weight:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label layoutX="218.0" layoutY="378.0" text="Number of races:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label fx:id="NamePrehladId" layoutX="320.0" layoutY="223.0" text="-None-" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label fx:id="SurnamePrehladId" layoutX="320.0" layoutY="261.0" text="-None-" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label fx:id="BirthdayPrehladId" layoutX="320.0" layoutY="299.0" text="-None-" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label fx:id="WeightPrehladId" layoutX="320.0" layoutY="338.0" text="-None-" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label fx:id="RacesNumberPrehladId" layoutX="320.0" layoutY="378.0" text="-None-" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label layoutX="252.0" layoutY="73.0" text="Set name of racer:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <TextField fx:id="RacerNamePrehladId" layoutX="376.0" layoutY="69.0" promptText="Name">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></TextField>
+                        <Label layoutX="252.0" layoutY="142.0" text="Set team of racer:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <TextField fx:id="RacerTeamPrehladId" layoutX="376.0" layoutY="138.0" promptText="Name of team">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></TextField>
+                        <Button fx:id="FindPrehladId" layoutX="359.0" layoutY="181.0" mnemonicParsing="false" text="Find racer">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Button>
+                        <Label layoutX="251.0" layoutY="108.0" text="Set surname of racer:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <TextField fx:id="RacerSurnamePrehladId" layoutX="376.0" layoutY="104.0" promptText="Surname">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></TextField>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Racer">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="NamePretekarId" layoutX="374.0" layoutY="107.0" promptText="Name">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></TextField>
+                        <TextField fx:id="SurnamePretekarId" layoutX="374.0" layoutY="146.0" promptText="Surname">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></TextField>
+                        <TextField fx:id="TeamPretekarId" layoutX="374.0" layoutY="251.0" promptText="Team">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></TextField>
+                        <Label layoutX="253.0" layoutY="111.0" text="Name:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label layoutX="253.0" layoutY="150.0" text="Surname:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label layoutX="253.0" layoutY="187.0" text="Date of birth:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label layoutX="253.0" layoutY="222.0" text="Weight:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label layoutX="253.0" layoutY="255.0" text="Team name:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Button fx:id="AddPretekarId" layoutX="430.0" layoutY="375.0" mnemonicParsing="false" text="Add">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Button>
+                        <Spinner fx:id="WeightPretekarId" layoutX="374.0" layoutY="218.0" max="90" min="43">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Spinner>
+                        <DatePicker fx:id="DateBirthPretekarId" layoutX="374.0" layoutY="183.0" promptText="Birthday">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></DatePicker>
+                        <TextField fx:id="CountryPretekarId" layoutX="374.0" layoutY="285.0" promptText="Country">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></TextField>
+                        <TextField fx:id="AddressPretekarId" layoutX="374.0" layoutY="320.0" promptText="Address">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></TextField>
+                        <Label layoutX="253.0" layoutY="289.0" text="Team country:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label layoutX="253.0" layoutY="324.0" text="Team address:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Sponsors">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="AddSponzorId" layoutX="515.0" layoutY="324.0" mnemonicParsing="false" text="Add">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Button>
+                        <TextField fx:id="NameSponzorId" layoutX="380.0" layoutY="147.0" promptText="Name">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></TextField>
+                        <TextField fx:id="LinkSponzorId" layoutX="379.0" layoutY="237.0" promptText="Link">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></TextField>
+                        <DatePicker fx:id="CreatSponzorId" layoutX="379.0" layoutY="191.0" promptText="Date">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></DatePicker>
+                        <Label layoutX="248.0" layoutY="151.0" text="Name of company:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label layoutX="248.0" layoutY="195.0" text="Date of establishment:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label layoutX="248.0" layoutY="241.0" text="Company web page:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Button fx:id="DeleteSponzorId" layoutX="367.0" layoutY="324.0" mnemonicParsing="false" text="Delete">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Place of race">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="AddMiestoPretekuId" layoutX="469.0" layoutY="319.0" mnemonicParsing="false" text="Add">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Button>
+                        <TextField fx:id="CountryMiestoPretekuId" layoutX="358.0" layoutY="160.0" promptText="Country">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></TextField>
+                        <TextField fx:id="AddressMiestoPretekuId" layoutX="358.0" layoutY="226.0" promptText="Address">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></TextField>
+                        <Label layoutX="265.0" layoutY="164.0" text="Country:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Label layoutX="265.0" layoutY="230.0" text="Address:" textFill="WHITE">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect></Label>
+                        <Button fx:id="DeleteMiestoPretekuId" layoutX="358.0" layoutY="319.0" mnemonicParsing="false" text="Delete">
+                           <effect>
+                              <DropShadow spread="0.8" />
+                           </effect>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>
