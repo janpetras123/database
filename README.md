@@ -1,3 +1,3 @@
 # Database
 
-## Program na zobrazenie stavu pretekárov, ich tímov a uskutocnenıch pretekov.
+## Program na zobrazenie a upravenie stavu pretekÃ¡rov, ich tÃ­mov a uskutocnenÃ½ch pretekov.
